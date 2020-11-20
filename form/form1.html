@@ -34,11 +34,26 @@
         <!--input:c : 여러 개의 선택지를 주고 여러개 선택-->
         <label for="">취미</label>
         <input type="checkbox" name="hobby" id="" />영화감상
-        <input type="checkbox" name="hobby" id="" />독서
+        <input type="checkbox" name="hobby" id="" checked />독서
+        <!--처음에 checked 되있는 글이 체크되어서 표시-->
         <input type="checkbox" name="hobby" id="" />운동
         <input type="checkbox" name="hobby" id="" />잠자기
       </div>
-      <input type="button" value="보내기" />
+      <div>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <select name="" id="">
+          <option value="bmw">bmw</option>
+          <option value="Benz" selected>Benz</option>
+          <!--selected : 처음에 설정되서 기본적으로 보여주는 값-->
+          <option value="HYUNDAI">현대자동차</option>
+          <option value="kia">기아자동차</option>
+        </select>
+      </div>
+      <input type="button" value="일반버튼" />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
     </form>
   </body>
 </html>

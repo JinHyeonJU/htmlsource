@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--novalidate : 유효성검증X-->
+    <form action="">
+      <div>
+        <input type="text" autofocus placeholder="아이디" required />
+        <!--required : 공백란일시 전송누르면 알려줌-->
+        <!--autofocus : 웹실행시 자동 커서가 깜빡, 1개만유효-->
+        <input type="password" name="" id="" placeholder="비밀번호" />
+        <!--placeholder : 회색글씨로 뭐입력해야되는지 알려줌-->
+      </div>
+      <input type="date" name="" id="" />
+      <!--date : 년월일-->
+      <input type="datetime" name="" id="" />
+      <input type="datetime-local" name="" id="" />
+      <!--datetime-local : 년월일시분-->
+    </form>
+    <div>
+      <input type="month" name="" id="" /><!--년 월-->
+      <input type="time" name="" id="" /><!--시:분-->
+      <input type="week" name="" id="" />
+      <!--년,x번째 주-->
+    </div>
+    <div>
+      <label for="">이메일</label>
+      <input type="email" name="" id="" />
+      <!--전화번호 입력창 : pattern으로 조건지정-->
+      <label for="">전화번호</label>
+      <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
+      <!--검색창 뒤에 x 표시-->
+      <label for="">검색</label>
+      <input type="search" name="" id="" />
+      <!--value 조절 할 수 있는 가로막대기 생성-->
+      <input type="range" name="" id="" min="1" max="10" step="2" />
+    </div>
+    <div>
+      <label for="">숫자</label>
+      <input type="number" name="" id="" />
+    </div>
+    <div>
+      <label for="">URL</label>
+      <input type="url" name="" id="" />
+      <!--숫자정할수있는 태그-->
+    </div>
+    <div>
+      <input type="submit" value="전송" />
+    </div>
+  </body>
+</html>
